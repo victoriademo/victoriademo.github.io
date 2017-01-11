@@ -1,0 +1,704 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Victoria Workforce Analytics</title>
+
+    <meta property="og:title" content="Victoria Workforce Analytics" />
+    <meta property="og:type" content="website" />
+
+    <script src="libs/jquery-1.11.1.min.js"></script>
+    <script src="bootstrap-3.3.1-dist/js/bootstrap.min.js"></script>
+    <script src="libs/d3.v3.min.js"></script>
+    <script src="libs/d3.slider.js"></script>
+    <script src="libs/underscore.js"></script>
+    <script src="libs/bullet.js"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap-3.3.1-dist/css/bootstrap-cosmo.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="jumbotron-narrow.css" rel="stylesheet">
+    <link href="libs/d3.slider.css" rel="stylesheet"  />
+    <style type="text/css">
+
+    circle {
+      stroke: black;
+      stroke-width: 2px;
+      opacity: .8;
+    }
+    .btn-group {
+      margin-left: 330px;
+    }
+    .label {
+      fill: black;
+      font-size: 16px;
+    }
+
+    .bullet { font: 10px sans-serif; }
+    .bullet .marker { stroke: gray; stroke-width: 0px; }
+    .bullet .tick line { stroke: #484d6d; stroke-width: .5px; }
+    .bullet .range.s0 { fill: #7aa25c; }
+    .bullet .range.s1 { fill: #5c7aa2; }
+    .bullet .range.s2 { fill: #a25c7a; }
+    .bullet .measure.s0 { fill: #FBDDB2; }
+    .bullet .title { font-size: 14px; font-weight: bold; }
+    .bullet .subtitle { fill: #999; }
+
+    </style>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="header">
+        <h3 class="text-muted">Victoria Workforce Analytics</h3>
+      </div>
+
+
+
+        <h2 id="sec-comunas">Indicadores medidos en Tienda [Junio a Octubre 2016]</h2>
+
+        <p>La siguiente visualización permite evaluar la eficiencia, productividad y optimización de la dotación asignada a cada tienda. Además permite comparar el punto de operación de cada tienda con respecto al resto, dejando en evidencia de manera clara los casos más críticos.</p>
+
+
+        <p>Para ver el detalle de cada mes es necesario utilizar el selector ubicado sobre el cuadro de información. Al pasar el cursor sobre cada círculo se despliega el nombre de la tienda correspondiente.</p>
+
+      <div class="panel panel-default">
+          <div class="panel-heading"><h4>Evolución Indicadores de Desempeño</h4>
+            <div id="slider12" class="pull-right" style="width: 50%; margin-top: -35px; margin-right: 50px"></div>
+            <p></p>
+          </div>
+          <div id="comunas-casen">
+              <div class="row " style="margin-top: 20px;">
+                <div class="col-sm-6">
+                    &nbsp;
+                </div>
+                <div class="col-sm-2">
+                  <h4><b>BAJO  </b><a data-toggle="tooltip" class="tooltipLink" data-original-title="El nivel del indicador es preocupante ya que está bajo el nivel normal." data-placement="right"><span class="glyphicon glyphicon-info-sign" style="font-size:15px"></span></a></h4>
+                </div>
+
+                <div class="col-sm-2">
+                  <h4><b>REGULAR  </b><a data-toggle="tooltip" class="tooltipLink" data-original-title="El nivel del indicador está dentro del nivel normal." data-placement="right"><span class="glyphicon glyphicon-info-sign" style="font-size:15px"></span></a></h4>
+                </div>
+
+                <div class="col-sm-2">
+                  <h4><b>ALTO  </b><a data-toggle="tooltip" class="tooltipLink" data-original-title="El nivel del indicador es destacable ya que está sobre el nivel normal." data-placement="right"><span class="glyphicon glyphicon-info-sign" style="font-size:15px"></span></a></h4>
+                </div>
+              </div>
+              <div id="comunas-barras" class="pull-right"></div>
+              <div id="comunas-texto" style="margin-left: 30px; margin-top: 20px;">
+                <p>&nbsp;</p>
+                <ul class="list-unstyled">
+                <li><code>Sales Productivity</code>: <b>Ventas/Tráfico</b> - Mide que tan productiva fue la tienda con respecto a su volumen de clientes.</li>
+                <li><b>Niveles: Bajo</b> < 7338 | <b>Alto</b> > 17097</li>
+                <li>&nbsp;</li>
+                <li>&nbsp;</li>
+                <li>&nbsp;</li>
+                <li><code>Conversion</code>: <b>Nº Boletas/Tráfico</b> - Caracteriza cuántos clientes realizaron compras, midiendo la eficiencia de los vendedores.</li>
+                <li><b>Niveles: Bajo</b> < 10.55 | <b>Alto</b> > 15.93</li>
+                <li>&nbsp;</li>
+                <li>&nbsp;</li>
+                <li>&nbsp;</li>
+                <li><code>Staff Availability</code>: <b>Horas Hombre/Tráfico</b> - Caracteriza cuántos vendedores estaban disponibles respecto al número de clientes, midiendo que tán óptima es la dotación presente.</li>
+                <li><b>Niveles: Bajo</b> < 12.45 | <b>Alto</b> > 20.79</li>
+                <li>&nbsp;</li>
+                <li>&nbsp;</li>
+                <li><code>Labor Cost</code>: <b>Productividad Costo/Productividad Venta</b> - Mide que tan eficiente en términos de costos fue cada tienda.</li>
+                <li><b>Niveles: Bajo</b> > 22.21 | <b>Alto</b> < 8.36</li>
+                </ul>
+              </div>
+              <div class="clearfix"></div>
+          </div>
+      </div>
+
+      <p>La siguiente visualización permite analizar la situación de cada Tienda observando el desempeño en cada indicador para cada mes, día de semana y segmento horario.</p>
+
+
+      <p>Para ver los datos de cada Tienda se debe usar el selector del centro. Para ver el detalle de cada mes es necesario utilizar el selector ubicado sobre el cuadro de información.</p>
+
+
+      <div class="panel panel-default">
+          <div class="panel-heading"><h4>Indicadores de Desempeño por Tienda, Día y Horario</h4>
+            <div id="slider13" class="pull-right" style="width: 50%; margin-top: -35px; margin-right: 50px"></div>
+            <p></p>
+          </div>
+          <div id="comunas-bullets">
+            <div class="col-lg-4 col-lg-offset-4" style="margin-top: 15px;">
+              <select id="select-stores" class="form-control input-sm" style="font-size: 20px; height:50px; text-align: center;">
+              </select>
+            </div>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <div id="area0"></div>
+            <div id="area2" style="float: left; width: 534px;"><h3 style="text-align: center;">Semana</h3><h4 style="text-align: center;">Tarde</h4></div>
+            <div id="area4" style="float: right; width: 534px;"><h3 style="text-align: center;">Fin de Semana</h3><h4 style="text-align: center;">Tarde</h4></div>
+            <div id="area1" style="float: left; width: 534px;"><h4 style="text-align: center;">Mañana</h4></div>
+            <div id="area3" style="float: right; width: 534px;"><h4 style="text-align: center;">Mañana</h4></div>
+              <div class="clearfix"></div>
+          </div>
+          <p>&nbsp;</p>
+      </div>
+
+      <footer class="footer">
+        <p>Última actualización: <em>Enero de 2017</em>. Datos obtenidos desde plataforma Victoria. http://www.geovictoria.cl</p>
+        <p>Si desea tener acceso a reportes como este para su empresa, contáctenos a info@geovictoria.com </p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    <script type="text/javascript">
+    //tooltips
+    $("a.tooltipLink").tooltip();
+
+
+    d3.csv('data/datos6.csv', function (error, data) {
+
+    var width = 600, height = 550;
+    var fill = d3.scale.ordinal()
+          .domain(["low", "medium", "high"])
+          .range(["#d84b2a", "#beccae", "#7aa25c"]);
+
+    var svg = d3.select("#comunas-barras").append("svg")
+        .attr("width", width)
+        .attr("height", height);
+
+    //var max_amount = d3.max(data, function (d) { return parseInt(d.total_amount)})
+    //var radius_scale = d3.scale.pow().exponent(0.5).domain([0, max_amount]).range([2, 85])
+
+    _.each(data, function (elem) {
+      elem.radius = 10;
+      elem.all = 'all';
+      elem.x = _.random(0, width);
+      elem.y = _.random(0, height);
+    })
+
+    essai = d3.slider().scale(d3.scale.ordinal().domain(["Junio", "Julio", "Agosto", "Septiembre", "Octubre"]).rangePoints([0, 1], 0.5)).axis(d3.svg.axis()).snap(true).value("Junio").on("slide", function(evt, value) {
+      nodes.transition().delay(0).duration(0)
+             //.filter(function(d) { return d.month == "Julio" })
+             .attr("r", function (d) {
+
+                 return 0;
+                });
+      draw(value);
+      nodes.transition().delay(0).duration(5000)
+             //.filter(function(d) { return d.month == "Julio" })
+             .attr("r", function (d) {
+               if(d.month == value){
+                 return d.radius;
+               } });
+    });
+    d3.select('#slider12').call(essai);
+
+
+
+
+
+    var padding = 0;
+    var maxRadius = d3.max(_.pluck(data, 'radius'));
+
+    var jun_centers = {
+                  "SalesPMalo": { name: "" , x: 110, y: 75 },
+                  "SalesPRegular": { name: "" , x: 300, y: 75 },
+                  "SalesPBueno": { name: "" , x: 480, y: 75 },
+                  "ConversionMalo": { name: "" , x: 110, y: 205 },
+                  "ConversionRegular": { name: "" , x: 300, y: 205 },
+                  "ConversionBueno": { name: "" , x: 480, y: 205 },
+                  "StarMalo": { name: "" , x: 110, y: 335 },
+                  "StarRegular": { name: "" , x: 300, y: 335 },
+                  "StarBueno": { name: "" , x: 480, y: 335 },
+                  "EficienciaMalo": { name: "" , x: 110, y: 465 },
+                  "EficienciaRegular": { name: "" , x: 300, y: 465 },
+                  "EficienciaBueno": { name: "" , x: 480, y: 465 }
+        }
+
+    var jul_centers = {
+      "SalesPMalo": { name: "" , x: 110, y: 75 },
+      "SalesPRegular": { name: "" , x: 300, y: 75 },
+      "SalesPBueno": { name: "" , x: 480, y: 75 },
+      "ConversionMalo": { name: "" , x: 110, y: 205 },
+      "ConversionRegular": { name: "" , x: 300, y: 205 },
+      "ConversionBueno": { name: "" , x: 480, y: 205 },
+      "StarMalo": { name: "" , x: 110, y: 335 },
+      "StarRegular": { name: "" , x: 300, y: 335 },
+      "StarBueno": { name: "" , x: 480, y: 335 },
+      "EficienciaMalo": { name: "" , x: 110, y: 465 },
+      "EficienciaRegular": { name: "" , x: 300, y: 465 },
+      "EficienciaBueno": { name: "" , x: 480, y: 465 }
+        }
+
+    var nodes = svg.selectAll("circle")
+      .data(data);
+
+    nodes.enter()
+      .append("circle")
+      //.filter(function(d) { return d.month == "Julio" })
+      .attr("class", "node")
+      .attr("cx", function (d) { return d.x; })
+      .attr("cy", function (d) { return d.y; })
+      .attr("r", 0)
+      .style("fill", function (d) { return fill(d.group); })
+      .on("mouseover", function (d) { showPopover.call(this, d); })
+      .on("mouseout", function (d) { removePopovers(); });
+
+
+
+    var force = d3.layout.force();
+
+    draw("Junio");
+
+    nodes.transition().delay(500).duration(5000)
+           //.filter(function(d) { return d.month == "Julio" })
+           .attr("r", function (d) {
+             if(d.month == "Junio"){
+               return d.radius;
+             } });
+
+
+    function draw (varname) {
+      //var centers = getCenters(varname, [1000, 400]);
+      if (varname == "Junio"){
+        var foci = jun_centers;
+      }
+      else {
+        var foci = jul_centers;
+      }
+      //var foci = varname === "Junio" ? jun_centers: jul_centers;
+      force.on("tick", tick(foci, varname));
+      labels(foci)
+      force.start();
+    }
+
+    function tick (foci, varname) {
+          return function (e) {
+            for (var i = 0; i < data.length; i++) {
+              var o = data[i];
+              if(o['month']==varname){
+                var f = foci[o['Category']];
+                o.y += (f.y - o.y) * e.alpha;
+                o.x += (f.x - o.x) * e.alpha;
+              }
+            }
+            nodes
+              .each(collide(.1))
+              .attr("cx", function (d) { return d.x; })
+              .attr("cy", function (d) { return d.y; });
+          }
+        }
+
+        function labels (foci) {
+          svg.selectAll(".label").remove();
+
+          svg.selectAll(".label")
+          .data(_.toArray(foci)).enter().append("text")
+          .attr("class", "label")
+          .text(function (d) { return d.name })
+          .attr("transform", function (d) {
+            return "translate(" + (d.x - ((d.name.length)*3)) + ", " + (d.y - 60) + ")";
+          });
+        }
+
+    function removePopovers () {
+      $('.popover').each(function() {
+        $(this).remove();
+      });
+    }
+
+    function showPopover (d) {
+      $(this).popover({
+        placement: 'auto top',
+        container: 'body',
+        trigger: 'manual',
+        html : true,
+        content: function() {
+          //return "Store: " + d.Store + "<br/>SalesP: " + d.SalesP +
+          //       "<br/>Conversion: " + d.Conversion + "<br/>STARP: " + d.StarP +
+          //       "<br/>Eficiencia: " + d.Eficiencia;
+          if(d.Category=="SalesPRegular"|d.Category=="SalesPBueno"|d.Category=="SalesPMalo"){
+            return "<b>" + d.Store+"</b><br/>" + d.SalesP;
+          }
+          else if(d.Category=="ConversionRegular"|d.Category=="ConversionBueno"|d.Category=="ConversionMalo"){
+            return "<b>" + d.Store+"</b><br/>" + d.Conversion;
+          }
+          else if(d.Category=="StarRegular"|d.Category=="StarBueno"|d.Category=="StarMalo"){
+            return "<b>" + d.Store+"</b><br/>" + d.StarP;
+          }
+          else if(d.Category=="EficienciaRegular"|d.Category=="EficienciaBueno"|d.Category=="EficienciaMalo"){
+            return "<b>" + d.Store+"</b><br/>" + d.Eficiencia;
+          }
+          else {
+            return "" + d.Store;
+          }
+        }
+      });
+      $(this).popover('show')
+
+    }
+
+    function collide(alpha) {
+      var quadtree = d3.geom.quadtree(data);
+      return function (d) {
+        var r = d.radius + maxRadius + padding,
+            nx1 = d.x - r,
+            nx2 = d.x + r,
+            ny1 = d.y - r,
+            ny2 = d.y + r;
+        quadtree.visit(function(quad, x1, y1, x2, y2) {
+          if (quad.point && (quad.point !== d)) {
+            var x = d.x - quad.point.x,
+                y = d.y - quad.point.y,
+                l = Math.sqrt(x * x + y * y),
+                r = d.radius + quad.point.radius + padding;
+            if (l < r) {
+              l = (l - r) / l * alpha;
+              d.x -= x *= l;
+              d.y -= y *= l;
+              quad.point.x += x;
+              quad.point.y += y;
+            }
+          }
+          return x1 > nx2 || x2 < nx1 || y1 > ny2 || y2 < ny1;
+        });
+      };
+    }
+  });
+
+
+  var margin1 = {top: 5, right: 30, bottom: 20, left: 160},
+      width1 = 1068 - margin1.left - margin1.right,
+      height1 = 50 - margin1.top - margin1.bottom;
+
+  var chart0 = d3.bullet()
+      .width(width1)
+      .height(height1);
+
+  var config_store = "01_";
+  var config_month = "JUN_";
+  var config_name = config_store + config_month;
+  essai2 = d3.slider().scale(d3.scale.ordinal().domain(["Junio", "Julio", "Agosto", "Septiembre", "Octubre"]).rangePoints([0, 1], 0.5)).axis(d3.svg.axis()).snap(true).value("Junio").on("slide", function(evt, value) {
+        if(value == "Junio"){
+          config_month = "JUN_";
+        }
+        else if(value == "Julio"){
+          config_month = "JUL_";
+        }
+        else if(value == "Agosto"){
+          config_month = "AGO_";
+        }
+        else if(value == "Septiembre"){
+          config_month = "SEP_";
+        }
+        else{
+          config_month = "OCT_";
+        }
+        config_name = config_store + config_month;
+        updateData(config_name);
+      });
+  d3.select('#slider13').call(essai2);
+
+
+
+
+
+
+
+
+  d3.json("data/"+config_name+"bulletdata0.json", function(error, data) {
+
+
+
+    var svg1 = d3.select("#area0").selectAll("svg")
+        .data(data)
+      .enter().append("svg")
+        .attr("class", "bullet")
+        .attr("width", width1 + margin1.left + margin1.right)
+        .attr("height", height1 + margin1.top + margin1.bottom)
+      .append("g")
+        .attr("transform", "translate(" + margin1.left + "," + margin1.top + ")")
+        .call(chart0);
+
+    var title = svg1.append("g")
+        .style("text-anchor", "end")
+        .attr("transform", "translate(-6," + height1 / 2 + ")");
+
+    title.append("text")
+        .attr("class", "title")
+        .text(function(d) { return d.title; });
+
+    title.append("text")
+        .attr("class", "subtitle")
+        .attr("dy", "1em")
+        .text(function(d) { return d.subtitle; });
+
+
+  });
+
+  var margin2 = {top: 5, right: 30, bottom: 20, left: 160},
+      width2 = 534 - margin2.left - margin2.right,
+      height2 = 50 - margin2.top - margin2.bottom;
+
+  var chart1 = d3.bullet()
+      .width(width2)
+      .height(height2);
+
+  d3.json("data/"+config_name+"bulletdata1.json", function(error, data) {
+    var svg1 = d3.select("#area1").selectAll("svg")
+        .data(data)
+      .enter().append("svg")
+        .attr("class", "bullet")
+        .attr("width", width2 + margin2.left + margin2.right)
+        .attr("height", height2 + margin2.top + margin2.bottom)
+      .append("g")
+        .attr("transform", "translate(" + margin2.left + "," + margin2.top + ")")
+        .call(chart1);
+
+    var title = svg1.append("g")
+        .style("text-anchor", "end")
+        .attr("transform", "translate(-6," + height2 / 2 + ")");
+
+    title.append("text")
+        .attr("class", "title")
+        .text(function(d) { return d.title; });
+
+    title.append("text")
+        .attr("class", "subtitle")
+        .attr("dy", "1em")
+        .text(function(d) { return d.subtitle; });
+
+
+  });
+
+  var chart2 = d3.bullet()
+      .width(width2)
+      .height(height2);
+
+  d3.json("data/"+config_name+"bulletdata2.json", function(error, data) {
+    var svg1 = d3.select("#area2").selectAll("svg")
+        .data(data)
+      .enter().append("svg")
+        .attr("class", "bullet")
+        .attr("width", width2 + margin2.left + margin2.right)
+        .attr("height", height2 + margin2.top + margin2.bottom)
+      .append("g")
+        .attr("transform", "translate(" + margin2.left + "," + margin2.top + ")")
+        .call(chart2);
+
+    var title = svg1.append("g")
+        .style("text-anchor", "end")
+        .attr("transform", "translate(-6," + height2 / 2 + ")");
+
+    title.append("text")
+        .attr("class", "title")
+        .text(function(d) { return d.title; });
+
+    title.append("text")
+        .attr("class", "subtitle")
+        .attr("dy", "1em")
+        .text(function(d) { return d.subtitle; });
+
+
+  });
+
+  var chart3 = d3.bullet()
+      .width(width2)
+      .height(height2);
+
+  d3.json("data/"+config_name+"bulletdata3.json", function(error, data) {
+    var svg1 = d3.select("#area3").selectAll("svg")
+        .data(data)
+      .enter().append("svg")
+        .attr("class", "bullet")
+        .attr("width", width2 + margin2.left + margin2.right)
+        .attr("height", height2 + margin2.top + margin2.bottom)
+      .append("g")
+        .attr("transform", "translate(" + margin2.left + "," + margin2.top + ")")
+        .call(chart3);
+
+    var title = svg1.append("g")
+        .style("text-anchor", "end")
+        .attr("transform", "translate(-6," + height2 / 2 + ")");
+
+    title.append("text")
+        .attr("class", "title")
+        .text(function(d) { return d.title; });
+
+    title.append("text")
+        .attr("class", "subtitle")
+        .attr("dy", "1em")
+        .text(function(d) { return d.subtitle; });
+
+
+  });
+
+  var chart4 = d3.bullet()
+      .width(width2)
+      .height(height2);
+
+  d3.json("data/"+config_name+"bulletdata4.json", function(error, data) {
+    var svg1 = d3.select("#area4").selectAll("svg")
+        .data(data)
+      .enter().append("svg")
+        .attr("class", "bullet")
+        .attr("width", width2 + margin2.left + margin2.right)
+        .attr("height", height2 + margin2.top + margin2.bottom)
+      .append("g")
+        .attr("transform", "translate(" + margin2.left + "," + margin2.top + ")")
+        .call(chart4);
+
+    var title = svg1.append("g")
+        .style("text-anchor", "end")
+        .attr("transform", "translate(-6," + height2 / 2 + ")");
+
+    title.append("text")
+        .attr("class", "title")
+        .text(function(d) { return d.title; });
+
+    title.append("text")
+        .attr("class", "subtitle")
+        .attr("dy", "1em")
+        .text(function(d) { return d.subtitle; });
+
+
+  });
+
+
+  d3.csv('data/datos6.csv', function (error, data) {
+  var nest = d3.nest()
+    .key(function(d) { return d.Store;})
+    .entries(data);
+
+    var option = d3.select('#select-stores').selectAll('option')
+      .data(nest.sort(function(a, b) { return d3.ascending(a.key, b.key); }));
+    option.enter()
+      .append('option')
+      .text(function(d) { return d.key; });
+
+
+      d3.select('#select-stores').on('change', function(e) {
+        if(this.value=="Norte"){
+          config_store = "01_";
+        }
+        else if(this.value=="Agustinas"){
+          config_store = "02_";
+        }
+        else if(this.value=="Paseo Sur"){
+          config_store = "03_";
+        }
+        else if(this.value=="Alameda"){
+          config_store = "04_";
+        }
+        else if(this.value=="Moneda"){
+          config_store = "05_";
+        }
+        else if(this.value=="San Martin"){
+          config_store = "06_";
+        }
+        else if(this.value=="Pedro de Valdivia"){
+          config_store = "07_";
+        }
+        else if(this.value=="Los Olmos"){
+          config_store = "08_";
+        }
+        else if(this.value=="Algarrobo"){
+          config_store = "09_";
+        }
+        else if(this.value=="Plaza Italia"){
+          config_store = "10_";
+        }
+        else if(this.value=="Norte Grande"){
+          config_store = "11_";
+        }
+        else if(this.value=="Trinidad"){
+          config_store = "12_";
+        }
+        else if(this.value=="Campo Lindo"){
+          config_store = "13_";
+        }
+        else{
+          config_store = "14_";
+        }
+
+        config_name = config_store + config_month;
+
+        updateData(config_name);
+      });
+  });
+
+  function updateData(config_name) {
+    d3.json("data/"+config_name+"bulletdata0.json", function(error, data) {
+
+      var svg1 = d3.select("#area0").selectAll("svg")
+      .datum(function (d, i) {
+            d.ranges = data[i].ranges;
+            d.measures = data[i].measures;
+            d.markers = data[i].markers;
+            return d;
+        })
+        .call(chart0.duration(1000));
+      });
+
+      d3.json("data/"+config_name+"bulletdata1.json", function(error, data) {
+
+        var svg1 = d3.select("#area1").selectAll("svg")
+        .datum(function (d, i) {
+              d.ranges = data[i].ranges;
+              d.measures = data[i].measures;
+              d.markers = data[i].markers;
+              return d;
+          })
+          .call(chart1.duration(1000));
+        });
+
+        d3.json("data/"+config_name+"bulletdata2.json", function(error, data) {
+
+          var svg1 = d3.select("#area2").selectAll("svg")
+          .datum(function (d, i) {
+                d.ranges = data[i].ranges;
+                d.measures = data[i].measures;
+                d.markers = data[i].markers;
+                return d;
+            })
+            .call(chart2.duration(1000));
+          });
+
+          d3.json("data/"+config_name+"bulletdata3.json", function(error, data) {
+
+            var svg1 = d3.select("#area3").selectAll("svg")
+            .datum(function (d, i) {
+                  d.ranges = data[i].ranges;
+                  d.measures = data[i].measures;
+                  d.markers = data[i].markers;
+                  return d;
+              })
+              .call(chart3.duration(1000));
+            });
+
+            d3.json("data/"+config_name+"bulletdata4.json", function(error, data) {
+
+              var svg1 = d3.select("#area4").selectAll("svg")
+              .datum(function (d, i) {
+                    d.ranges = data[i].ranges;
+                    d.measures = data[i].measures;
+                    d.markers = data[i].markers;
+                    return d;
+                })
+                .call(chart4.duration(1000));
+              });
+}
+
+</script>
+  </body>
+</html>

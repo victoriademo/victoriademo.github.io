@@ -1,0 +1,281 @@
+Store,Category,SalesP,Conversion,StarP,Eficiencia,group,month
+Algarrobo,SalesPBueno,21455,16.07,14.30,9.00,high,Junio
+Algarrobo,ConversionBueno,21455,16.07,14.30,9.00,high,Junio
+Algarrobo,StarRegular,21455,16.07,14.30,9.00,medium,Junio
+Algarrobo,EficienciaRegular,21455,16.07,14.30,9.00,medium,Junio
+Algarrobo,SalesPBueno,17400,15.03,11.62,7.00,high,Julio
+Algarrobo,ConversionRegular,17400,15.03,11.62,7.00,medium,Julio
+Algarrobo,StarMalo,17400,15.03,11.62,7.00,low,Julio
+Algarrobo,EficienciaBueno,17400,15.03,11.62,7.00,high,Julio
+Algarrobo,SalesPBueno,22607,18.49,19.63,9.00,high,Agosto
+Algarrobo,ConversionBueno,22607,18.49,19.63,9.00,high,Agosto
+Algarrobo,StarRegular,22607,18.49,19.63,9.00,medium,Agosto
+Algarrobo,EficienciaRegular,22607,18.49,19.63,9.00,medium,Agosto
+Algarrobo,SalesPBueno,23252,20.03,18.28,10.00,high,Septiembre
+Algarrobo,ConversionBueno,23252,20.03,18.28,10.00,high,Septiembre
+Algarrobo,StarRegular,23252,20.03,18.28,10.00,medium,Septiembre
+Algarrobo,EficienciaRegular,23252,20.03,18.28,10.00,medium,Septiembre
+Algarrobo,SalesPBueno,21815,17.08,18.11,8.00,high,Octubre
+Algarrobo,ConversionBueno,21815,17.08,18.11,8.00,high,Octubre
+Algarrobo,StarRegular,21815,17.08,18.11,8.00,medium,Octubre
+Algarrobo,EficienciaBueno,21815,17.08,18.11,8.00,high,Octubre
+Los Olmos,SalesPBueno,19766,17.56,25.51,15.00,high,Junio
+Los Olmos,ConversionBueno,19766,17.56,25.51,15.00,high,Junio
+Los Olmos,StarBueno,19766,17.56,25.51,15.00,high,Junio
+Los Olmos,EficienciaRegular,19766,17.56,25.51,15.00,medium,Junio
+Los Olmos,SalesPBueno,25794,20.91,24.23,9.00,high,Julio
+Los Olmos,ConversionBueno,25794,20.91,24.23,9.00,high,Julio
+Los Olmos,StarBueno,25794,20.91,24.23,9.00,high,Julio
+Los Olmos,EficienciaRegular,25794,20.91,24.23,9.00,medium,Julio
+Los Olmos,SalesPBueno,17383,15.55,15.70,12.00,high,Agosto
+Los Olmos,ConversionRegular,17383,15.55,15.70,12.00,medium,Agosto
+Los Olmos,StarRegular,17383,15.55,15.70,12.00,medium,Agosto
+Los Olmos,EficienciaRegular,17383,15.55,15.70,12.00,medium,Agosto
+Los Olmos,SalesPRegular,15681,15.53,15.18,11.00,medium,Septiembre
+Los Olmos,ConversionRegular,15681,15.53,15.18,11.00,medium,Septiembre
+Los Olmos,StarRegular,15681,15.53,15.18,11.00,medium,Septiembre
+Los Olmos,EficienciaRegular,15681,15.53,15.18,11.00,medium,Septiembre
+Los Olmos,SalesPRegular,14214,12.55,12.08,9.00,medium,Octubre
+Los Olmos,ConversionRegular,14214,12.55,12.08,9.00,medium,Octubre
+Los Olmos,StarMalo,14214,12.55,12.08,9.00,low,Octubre
+Los Olmos,EficienciaRegular,14214,12.55,12.08,9.00,medium,Octubre
+Campo Lindo,SalesPRegular,7568,10.84,14.13,15.00,medium,Junio
+Campo Lindo,ConversionRegular,7568,10.84,14.13,15.00,medium,Junio
+Campo Lindo,StarRegular,7568,10.84,14.13,15.00,medium,Junio
+Campo Lindo,EficienciaRegular,7568,10.84,14.13,15.00,medium,Junio
+Campo Lindo,SalesPRegular,7998,9.91,12.82,8.00,medium,Julio
+Campo Lindo,ConversionMalo,7998,9.91,12.82,8.00,low,Julio
+Campo Lindo,StarRegular,7998,9.91,12.82,8.00,medium,Julio
+Campo Lindo,EficienciaBueno,7998,9.91,12.82,8.00,high,Julio
+Campo Lindo,SalesPRegular,8474,11.03,15.23,12.00,medium,Agosto
+Campo Lindo,ConversionRegular,8474,11.03,15.23,12.00,medium,Agosto
+Campo Lindo,StarRegular,8474,11.03,15.23,12.00,medium,Agosto
+Campo Lindo,EficienciaRegular,8474,11.03,15.23,12.00,medium,Agosto
+Campo Lindo,SalesPRegular,7906,11.86,12.37,11.00,medium,Septiembre
+Campo Lindo,ConversionRegular,7906,11.86,12.37,11.00,medium,Septiembre
+Campo Lindo,StarMalo,7906,11.86,12.37,11.00,low,Septiembre
+Campo Lindo,EficienciaRegular,7906,11.86,12.37,11.00,medium,Septiembre
+Campo Lindo,SalesPRegular,8913,12.31,12.42,11.00,medium,Octubre
+Campo Lindo,ConversionRegular,8913,12.31,12.42,11.00,medium,Octubre
+Campo Lindo,StarMalo,8913,12.31,12.42,11.00,low,Octubre
+Campo Lindo,EficienciaRegular,8913,12.31,12.42,11.00,medium,Octubre
+Alameda,SalesPRegular,16978,16.22,25.66,19.00,medium,Junio
+Alameda,ConversionBueno,16978,16.22,25.66,19.00,high,Junio
+Alameda,StarBueno,16978,16.22,25.66,19.00,high,Junio
+Alameda,EficienciaRegular,16978,16.22,25.66,19.00,medium,Junio
+Alameda,SalesPRegular,16333,14.94,21.07,11.00,medium,Julio
+Alameda,ConversionRegular,16333,14.94,21.07,11.00,medium,Julio
+Alameda,StarBueno,16333,14.94,21.07,11.00,high,Julio
+Alameda,EficienciaRegular,16333,14.94,21.07,11.00,medium,Julio
+Alameda,SalesPBueno,18957,18.09,26.17,13.00,high,Agosto
+Alameda,ConversionBueno,18957,18.09,26.17,13.00,high,Agosto
+Alameda,StarBueno,18957,18.09,26.17,13.00,high,Agosto
+Alameda,EficienciaRegular,18957,18.09,26.17,13.00,medium,Agosto
+Alameda,SalesPBueno,18591,19.08,21.77,13.00,high,Septiembre
+Alameda,ConversionBueno,18591,19.08,21.77,13.00,high,Septiembre
+Alameda,StarBueno,18591,19.08,21.77,13.00,high,Septiembre
+Alameda,EficienciaRegular,18591,19.08,21.77,13.00,medium,Septiembre
+Alameda,SalesPRegular,14524,15.55,23.86,15.00,medium,Octubre
+Alameda,ConversionRegular,14524,15.55,23.86,15.00,medium,Octubre
+Alameda,StarBueno,14524,15.55,23.86,15.00,high,Octubre
+Alameda,EficienciaRegular,14524,15.55,23.86,15.00,medium,Octubre
+Norte Grande,SalesPRegular,10338,10.43,11.90,19.00,medium,Junio
+Norte Grande,ConversionMalo,10338,10.43,11.90,19.00,low,Junio
+Norte Grande,StarMalo,10338,10.43,11.90,19.00,low,Junio
+Norte Grande,EficienciaRegular,10338,10.43,11.90,19.00,medium,Junio
+Norte Grande,SalesPRegular,11609,11.81,12.22,10.00,medium,Julio
+Norte Grande,ConversionRegular,11609,11.81,12.22,10.00,medium,Julio
+Norte Grande,StarMalo,11609,11.81,12.22,10.00,low,Julio
+Norte Grande,EficienciaRegular,11609,11.81,12.22,10.00,medium,Julio
+Norte Grande,SalesPRegular,9227,9.77,14.62,13.00,medium,Agosto
+Norte Grande,ConversionMalo,9227,9.77,14.62,13.00,low,Agosto
+Norte Grande,StarRegular,9227,9.77,14.62,13.00,medium,Agosto
+Norte Grande,EficienciaRegular,9227,9.77,14.62,13.00,medium,Agosto
+Norte Grande,SalesPRegular,9433,10.36,12.22,15.00,medium,Septiembre
+Norte Grande,ConversionMalo,9433,10.36,12.22,15.00,low,Septiembre
+Norte Grande,StarMalo,9433,10.36,12.22,15.00,low,Septiembre
+Norte Grande,EficienciaRegular,9433,10.36,12.22,15.00,medium,Septiembre
+Norte Grande,SalesPRegular,7447,8.84,8.96,13.00,medium,Octubre
+Norte Grande,ConversionMalo,7447,8.84,8.96,13.00,low,Octubre
+Norte Grande,StarMalo,7447,8.84,8.96,13.00,low,Octubre
+Norte Grande,EficienciaRegular,7447,8.84,8.96,13.00,medium,Octubre
+Trinidad,SalesPRegular,10838,10.97,13.26,16.00,medium,Junio
+Trinidad,ConversionRegular,10838,10.97,13.26,16.00,medium,Junio
+Trinidad,StarRegular,10838,10.97,13.26,16.00,medium,Junio
+Trinidad,EficienciaRegular,10838,10.97,13.26,16.00,medium,Junio
+Trinidad,SalesPRegular,11596,12.52,13.75,9.00,medium,Julio
+Trinidad,ConversionRegular,11596,12.52,13.75,9.00,medium,Julio
+Trinidad,StarRegular,11596,12.52,13.75,9.00,medium,Julio
+Trinidad,EficienciaRegular,11596,12.52,13.75,9.00,medium,Julio
+Trinidad,SalesPRegular,12309,12.76,15.27,11.00,medium,Agosto
+Trinidad,ConversionRegular,12309,12.76,15.27,11.00,medium,Agosto
+Trinidad,StarRegular,12309,12.76,15.27,11.00,medium,Agosto
+Trinidad,EficienciaRegular,12309,12.76,15.27,11.00,medium,Agosto
+Trinidad,SalesPRegular,13730,16.09,18.02,11.00,medium,Septiembre
+Trinidad,ConversionBueno,13730,16.09,18.02,11.00,high,Septiembre
+Trinidad,StarRegular,13730,16.09,18.02,11.00,medium,Septiembre
+Trinidad,EficienciaRegular,13730,16.09,18.02,11.00,medium,Septiembre
+Trinidad,SalesPRegular,13275,14.53,15.91,10.00,medium,Octubre
+Trinidad,ConversionRegular,13275,14.53,15.91,10.00,medium,Octubre
+Trinidad,StarRegular,13275,14.53,15.91,10.00,medium,Octubre
+Trinidad,EficienciaRegular,13275,14.53,15.91,10.00,medium,Octubre
+San Martin,SalesPRegular,8507,12.64,14.51,14.00,medium,Junio
+San Martin,ConversionRegular,8507,12.64,14.51,14.00,medium,Junio
+San Martin,StarRegular,8507,12.64,14.51,14.00,medium,Junio
+San Martin,EficienciaRegular,8507,12.64,14.51,14.00,medium,Junio
+San Martin,SalesPRegular,7458,10.17,13.54,11.00,medium,Julio
+San Martin,ConversionMalo,7458,10.17,13.54,11.00,low,Julio
+San Martin,StarRegular,7458,10.17,13.54,11.00,medium,Julio
+San Martin,EficienciaRegular,7458,10.17,13.54,11.00,medium,Julio
+San Martin,SalesPRegular,8708,11.78,13.04,12.00,medium,Agosto
+San Martin,ConversionRegular,8708,11.78,13.04,12.00,medium,Agosto
+San Martin,StarRegular,8708,11.78,13.04,12.00,medium,Agosto
+San Martin,EficienciaRegular,8708,11.78,13.04,12.00,medium,Agosto
+San Martin,SalesPRegular,9969,17.55,18.98,12.00,medium,Septiembre
+San Martin,ConversionBueno,9969,17.55,18.98,12.00,high,Septiembre
+San Martin,StarRegular,9969,17.55,18.98,12.00,medium,Septiembre
+San Martin,EficienciaRegular,9969,17.55,18.98,12.00,medium,Septiembre
+San Martin,SalesPRegular,8364,13.78,15.59,12.00,medium,Octubre
+San Martin,ConversionRegular,8364,13.78,15.59,12.00,medium,Octubre
+San Martin,StarRegular,8364,13.78,15.59,12.00,medium,Octubre
+San Martin,EficienciaRegular,8364,13.78,15.59,12.00,medium,Octubre
+Agustinas,SalesPRegular,11029,11.25,15.68,17.00,medium,Junio
+Agustinas,ConversionRegular,11029,11.25,15.68,17.00,medium,Junio
+Agustinas,StarRegular,11029,11.25,15.68,17.00,medium,Junio
+Agustinas,EficienciaRegular,11029,11.25,15.68,17.00,medium,Junio
+Agustinas,SalesPRegular,11157,11.70,15.06,12.00,medium,Julio
+Agustinas,ConversionRegular,11157,11.70,15.06,12.00,medium,Julio
+Agustinas,StarRegular,11157,11.70,15.06,12.00,medium,Julio
+Agustinas,EficienciaRegular,11157,11.70,15.06,12.00,medium,Julio
+Agustinas,SalesPRegular,14814,15.29,21.40,14.00,medium,Agosto
+Agustinas,ConversionRegular,14814,15.29,21.40,14.00,medium,Agosto
+Agustinas,StarBueno,14814,15.29,21.40,14.00,high,Agosto
+Agustinas,EficienciaRegular,14814,15.29,21.40,14.00,medium,Agosto
+Agustinas,SalesPBueno,19535,22.34,25.57,12.00,high,Septiembre
+Agustinas,ConversionBueno,19535,22.34,25.57,12.00,high,Septiembre
+Agustinas,StarBueno,19535,22.34,25.57,12.00,high,Septiembre
+Agustinas,EficienciaRegular,19535,22.34,25.57,12.00,medium,Septiembre
+Agustinas,SalesPRegular,13621,14.78,18.25,13.00,medium,Octubre
+Agustinas,ConversionRegular,13621,14.78,18.25,13.00,medium,Octubre
+Agustinas,StarRegular,13621,14.78,18.25,13.00,medium,Octubre
+Agustinas,EficienciaRegular,13621,14.78,18.25,13.00,medium,Octubre
+Moneda,SalesPRegular,15322,14.42,12.29,10.00,medium,Junio
+Moneda,ConversionRegular,15322,14.42,12.29,10.00,medium,Junio
+Moneda,StarMalo,15322,14.42,12.29,10.00,low,Junio
+Moneda,EficienciaRegular,15322,14.42,12.29,10.00,medium,Junio
+Moneda,SalesPRegular,12856,12.27,9.34,7.00,medium,Julio
+Moneda,ConversionRegular,12856,12.27,9.34,7.00,medium,Julio
+Moneda,StarMalo,12856,12.27,9.34,7.00,low,Julio
+Moneda,EficienciaBueno,12856,12.27,9.34,7.00,high,Julio
+Moneda,SalesPBueno,18857,17.56,14.73,8.00,high,Agosto
+Moneda,ConversionBueno,18857,17.56,14.73,8.00,high,Agosto
+Moneda,StarRegular,18857,17.56,14.73,8.00,medium,Agosto
+Moneda,EficienciaBueno,18857,17.56,14.73,8.00,high,Agosto
+Moneda,SalesPBueno,23603,23.85,18.03,9.00,high,Septiembre
+Moneda,ConversionBueno,23603,23.85,18.03,9.00,high,Septiembre
+Moneda,StarRegular,23603,23.85,18.03,9.00,medium,Septiembre
+Moneda,EficienciaRegular,23603,23.85,18.03,9.00,medium,Septiembre
+Moneda,SalesPRegular,13423,13.67,12.63,7.00,medium,Octubre
+Moneda,ConversionRegular,13423,13.67,12.63,7.00,medium,Octubre
+Moneda,StarRegular,13423,13.67,12.63,7.00,medium,Octubre
+Moneda,EficienciaBueno,13423,13.67,12.63,7.00,high,Octubre
+Pedro de Valdivia,SalesPRegular,14119,14.11,14.27,13.00,medium,Junio
+Pedro de Valdivia,ConversionRegular,14119,14.11,14.27,13.00,medium,Junio
+Pedro de Valdivia,StarRegular,14119,14.11,14.27,13.00,medium,Junio
+Pedro de Valdivia,EficienciaRegular,14119,14.11,14.27,13.00,medium,Junio
+Pedro de Valdivia,SalesPRegular,15002,13.82,16.83,8.00,medium,Julio
+Pedro de Valdivia,ConversionRegular,15002,13.82,16.83,8.00,medium,Julio
+Pedro de Valdivia,StarRegular,15002,13.82,16.83,8.00,medium,Julio
+Pedro de Valdivia,EficienciaBueno,15002,13.82,16.83,8.00,high,Julio
+Pedro de Valdivia,SalesPRegular,11038,11.14,11.94,10.00,medium,Agosto
+Pedro de Valdivia,ConversionRegular,11038,11.14,11.94,10.00,medium,Agosto
+Pedro de Valdivia,StarMalo,11038,11.14,11.94,10.00,low,Agosto
+Pedro de Valdivia,EficienciaRegular,11038,11.14,11.94,10.00,medium,Agosto
+Pedro de Valdivia,SalesPRegular,11467,11.01,12.28,10.00,medium,Septiembre
+Pedro de Valdivia,ConversionRegular,11467,11.01,12.28,10.00,medium,Septiembre
+Pedro de Valdivia,StarMalo,11467,11.01,12.28,10.00,low,Septiembre
+Pedro de Valdivia,EficienciaRegular,11467,11.01,12.28,10.00,medium,Septiembre
+Pedro de Valdivia,SalesPRegular,11345,11.39,13.53,9.00,medium,Octubre
+Pedro de Valdivia,ConversionRegular,11345,11.39,13.53,9.00,medium,Octubre
+Pedro de Valdivia,StarRegular,11345,11.39,13.53,9.00,medium,Octubre
+Pedro de Valdivia,EficienciaRegular,11345,11.39,13.53,9.00,medium,Octubre
+Paseo Sur,SalesPMalo,7158,11.12,17.78,25.00,low,Junio
+Paseo Sur,ConversionRegular,7158,11.12,17.78,25.00,medium,Junio
+Paseo Sur,StarRegular,7158,11.12,17.78,25.00,medium,Junio
+Paseo Sur,EficienciaMalo,7158,11.12,17.78,25.00,low,Junio
+Paseo Sur,SalesPMalo,5391,9.55,13.98,17.00,low,Julio
+Paseo Sur,ConversionMalo,5391,9.55,13.98,17.00,low,Julio
+Paseo Sur,StarRegular,5391,9.55,13.98,17.00,medium,Julio
+Paseo Sur,EficienciaRegular,5391,9.55,13.98,17.00,medium,Julio
+Paseo Sur,SalesPMalo,7251,11.67,18.64,22.00,low,Agosto
+Paseo Sur,ConversionRegular,7251,11.67,18.64,22.00,medium,Agosto
+Paseo Sur,StarRegular,7251,11.67,18.64,22.00,medium,Agosto
+Paseo Sur,EficienciaRegular,7251,11.67,18.64,22.00,medium,Agosto
+Paseo Sur,SalesPMalo,5780,10.65,13.31,18.00,low,Septiembre
+Paseo Sur,ConversionRegular,5780,10.65,13.31,18.00,medium,Septiembre
+Paseo Sur,StarRegular,5780,10.65,13.31,18.00,medium,Septiembre
+Paseo Sur,EficienciaRegular,5780,10.65,13.31,18.00,medium,Septiembre
+Paseo Sur,SalesPMalo,5752,9.06,11.22,15.00,low,Octubre
+Paseo Sur,ConversionMalo,5752,9.06,11.22,15.00,low,Octubre
+Paseo Sur,StarMalo,5752,9.06,11.22,15.00,low,Octubre
+Paseo Sur,EficienciaRegular,5752,9.06,11.22,15.00,medium,Octubre
+Norte,SalesPRegular,10742,15.43,13.73,20.00,medium,Junio
+Norte,ConversionRegular,10742,15.43,13.73,20.00,medium,Junio
+Norte,StarRegular,10742,15.43,13.73,20.00,medium,Junio
+Norte,EficienciaRegular,10742,15.43,13.73,20.00,medium,Junio
+Norte,SalesPRegular,8713,13.63,17.54,16.00,medium,Julio
+Norte,ConversionRegular,8713,13.63,17.54,16.00,medium,Julio
+Norte,StarRegular,8713,13.63,17.54,16.00,medium,Julio
+Norte,EficienciaRegular,8713,13.63,17.54,16.00,medium,Julio
+Norte,SalesPRegular,10286,15.08,19.67,18.00,medium,Agosto
+Norte,ConversionRegular,10286,15.08,19.67,18.00,medium,Agosto
+Norte,StarRegular,10286,15.08,19.67,18.00,medium,Agosto
+Norte,EficienciaRegular,10286,15.08,19.67,18.00,medium,Agosto
+Norte,SalesPRegular,13042,19.21,19.74,18.00,medium,Septiembre
+Norte,ConversionBueno,13042,19.21,19.74,18.00,high,Septiembre
+Norte,StarRegular,13042,19.21,19.74,18.00,medium,Septiembre
+Norte,EficienciaRegular,13042,19.21,19.74,18.00,medium,Septiembre
+Norte,SalesPRegular,9983,13.99,17.11,17.00,medium,Octubre
+Norte,ConversionRegular,9983,13.99,17.11,17.00,medium,Octubre
+Norte,StarRegular,9983,13.99,17.11,17.00,medium,Octubre
+Norte,EficienciaRegular,9983,13.99,17.11,17.00,medium,Octubre
+Plaza Italia,SalesPRegular,8471,13.27,20.86,33.00,medium,Junio
+Plaza Italia,ConversionRegular,8471,13.27,20.86,33.00,medium,Junio
+Plaza Italia,StarBueno,8471,13.27,20.86,33.00,high,Junio
+Plaza Italia,EficienciaMalo,8471,13.27,20.86,33.00,low,Junio
+Plaza Italia,SalesPMalo,6891,11.67,19.24,27.00,low,Julio
+Plaza Italia,ConversionRegular,6891,11.67,19.24,27.00,medium,Julio
+Plaza Italia,StarRegular,6891,11.67,19.24,27.00,medium,Julio
+Plaza Italia,EficienciaMalo,6891,11.67,19.24,27.00,low,Julio
+Plaza Italia,SalesPMalo,5734,10.60,21.99,35.00,low,Agosto
+Plaza Italia,ConversionRegular,5734,10.60,21.99,35.00,medium,Agosto
+Plaza Italia,StarBueno,5734,10.60,21.99,35.00,high,Agosto
+Plaza Italia,EficienciaMalo,5734,10.60,21.99,35.00,low,Agosto
+Plaza Italia,SalesPMalo,7112,13.63,23.97,31.00,low,Septiembre
+Plaza Italia,ConversionRegular,7112,13.63,23.97,31.00,medium,Septiembre
+Plaza Italia,StarBueno,7112,13.63,23.97,31.00,high,Septiembre
+Plaza Italia,EficienciaMalo,7112,13.63,23.97,31.00,low,Septiembre
+Plaza Italia,SalesPMalo,5593,10.72,14.29,28.00,low,Octubre
+Plaza Italia,ConversionRegular,5593,10.72,14.29,28.00,medium,Octubre
+Plaza Italia,StarRegular,5593,10.72,14.29,28.00,medium,Octubre
+Plaza Italia,EficienciaMalo,5593,10.72,14.29,28.00,low,Octubre
+Elqui,SalesPRegular,10327,11.07,14.39,24.00,medium,Junio
+Elqui,ConversionRegular,10327,11.07,14.39,24.00,medium,Junio
+Elqui,StarRegular,10327,11.07,14.39,24.00,medium,Junio
+Elqui,EficienciaMalo,10327,11.07,14.39,24.00,low,Junio
+Elqui,SalesPRegular,8297,10.99,20.07,24.00,medium,Julio
+Elqui,ConversionRegular,8297,10.99,20.07,24.00,medium,Julio
+Elqui,StarRegular,8297,10.99,20.07,24.00,medium,Julio
+Elqui,EficienciaMalo,8297,10.99,20.07,24.00,low,Julio
+Elqui,SalesPRegular,8375,12.77,20.39,28.00,medium,Agosto
+Elqui,ConversionRegular,8375,12.77,20.39,28.00,medium,Agosto
+Elqui,StarRegular,8375,12.77,20.39,28.00,medium,Agosto
+Elqui,EficienciaMalo,8375,12.77,20.39,28.00,low,Agosto
+Elqui,SalesPRegular,8934,11.18,16.97,23.00,medium,Septiembre
+Elqui,ConversionRegular,8934,11.18,16.97,23.00,medium,Septiembre
+Elqui,StarRegular,8934,11.18,16.97,23.00,medium,Septiembre
+Elqui,EficienciaMalo,8934,11.18,16.97,23.00,low,Septiembre
+Elqui,SalesPRegular,9269,11.03,14.02,17.00,medium,Octubre
+Elqui,ConversionRegular,9269,11.03,14.02,17.00,medium,Octubre
+Elqui,StarRegular,9269,11.03,14.02,17.00,medium,Octubre
+Elqui,EficienciaRegular,9269,11.03,14.02,17.00,medium,Octubre
